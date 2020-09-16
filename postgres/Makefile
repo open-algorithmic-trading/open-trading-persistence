@@ -1,5 +1,5 @@
 echo:
-	@echo 'Welcome to money plant!'
+	@echo 'Welcome to open trading!'
 	
 db-start:
 	docker build --build-arg postgres_pwd=${PGPASSWORD} -t opent-postgres:latest ./
