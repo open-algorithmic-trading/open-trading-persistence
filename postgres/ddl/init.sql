@@ -4,7 +4,9 @@ DROP TABLE IF EXISTS stock;
 
 CREATE TABLE stock (
     id                  SERIAL PRIMARY KEY,
-    symbol              VARCHAR(5)
+    symbol              VARCHAR(5),
+    name                VARCHAR(50),
+    industry            VARCHAR(50)
 );
 
 CREATE TABLE import_stock_candle (

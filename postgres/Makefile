@@ -8,6 +8,7 @@ db-start:
 	
 db-init:
 	psql -h 127.0.0.1 -U postgres -f ./ddl/init.sql
+	psql -h 127.0.0.1 -U postgres -f ./dml/init.sql
 	
 db-rm:
 	docker stop opent-postgres
