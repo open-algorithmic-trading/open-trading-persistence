@@ -10,4 +10,5 @@
 
 # Clean up
 
-- You can run 'make db-rm' to stop the container and remove it
+- 'make db-rm' to stop the container and remove it
+- 'make db-nuke' to delete all postgres files

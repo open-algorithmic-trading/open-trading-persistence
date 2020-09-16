@@ -2,7 +2,7 @@ echo:
 	@echo 'Welcome to open trading!'
 	
 db-start:
-	mkdir -p /data
+	sudo mkdir -p /data
 	docker build --build-arg postgres_pwd=${PGPASSWORD} -t opent-postgres:latest ./
 	docker run -d -p 5432:5432 -v /data:/var/lib/postgresql/data --name opent-postgres opent-postgres:latest
 	
@@ -13,3 +13,6 @@ db-init:
 db-rm:
 	docker stop opent-postgres
 	docker rm opent-postgres
+	
+db-nuke:
+	sudo rm -rf /data
