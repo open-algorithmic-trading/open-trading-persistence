@@ -1,3 +1,5 @@
 # open-trading-persistence
 
-database setup for the open trading project
+Database setup for the open trading project
+
+Navigate to ops folder for instructions on running postgres
